@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sports Central — Live Sports, One Place</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/static/style.css?v=solo-wikirace-2"></head><body>
+<div class="app-shell"><aside class="sidebar">
+<div class="brand"><div class="brand-mark">S<span>+</span></div><div><b>SPORTS</b><small>CENTRAL</small></div></div>
+<div class="side-label">WORKSPACE</div>
+<button class="nav active" data-view="overview"><i>◫</i> Overview</button>
+<button class="nav" data-view="scores"><i>◉</i> Live scores</button>
+<button class="nav" data-view="news"><i>▤</i> Sports news</button>
+<button class="nav" data-view="teams"><i>♧</i> Teams & players</button>
+<button class="nav" data-view="games"><i>▣</i> Sports games</button>
+<button class="nav" data-view="bets"><i>▱</i> Paper betting <span class="paper-tag">FREE</span></button>
+<div class="side-label space-top">YOUR SPORTS</div>
+<button class="league-link" data-league="nba">🏀 NBA</button><button class="league-link" data-league="nfl">🏈 NFL</button>
+<button class="league-link" data-league="mlb">⚾ MLB</button><button class="league-link" data-league="nhl">🏒 NHL</button>
+<button class="league-link" data-league="wnba">🏀 WNBA</button><button class="league-link" data-league="mls">⚽ MLS</button>
+<div class="sidebar-bottom"><div class="live-status"><span></span><div><b>Data connection</b><small id="connection">Connecting…</small></div></div><small class="muted">SPORTS CENTRAL © 2026</small></div>
+</aside><main class="main">
+<header class="topbar"><div class="crumb"><span>Workspace</span><b>/</b><strong id="pageTitle">Overview</strong></div>
+<div class="top-actions"><div class="search-wrap"><input id="globalSearch" placeholder="Search teams..." autocomplete="off"><div id="searchResults" class="search-results"></div></div>
+<div class="date-pill" id="today"></div><button class="icon-btn" id="refreshBtn">↻</button><div class="avatar">SC</div></div></header>
+<div id="viewContent">
+<section class="welcome-row"><div><div class="eyebrow"><span class="pulse"></span> YOUR SPORTS, IN REAL TIME</div><h1>Every game.<br><em>One destination.</em></h1><p class="subhead">Scores, stories and the moments that matter — all in one place.</p></div><div class="hero-stat"><small>TRACKING ACROSS</small><strong>09</strong><span>LEAGUES & COMPETITIONS</span></div></section>
+<section class="ticker"><div class="ticker-tag"><span class="pulse"></span> LIVE NOW</div><div class="ticker-track" id="ticker"><span>Loading live action…</span></div></section>
+<section class="section-head"><div><div class="eyebrow">THE SCOREBOARD</div><h2 id="scoreHeading">Today's matchups</h2></div><div class="filters"><button class="filter active" data-filter="all">All sports</button><button class="filter" data-filter="live">Live now</button><button class="filter" data-filter="upcoming">Upcoming</button></div></section>
+<div class="league-tabs" id="leagueTabs"><button class="league-tab active" data-sport="all">All</button><button class="league-tab" data-sport="NBA">NBA</button><button class="league-tab" data-sport="NFL">NFL</button><button class="league-tab" data-sport="MLB">MLB</button><button class="league-tab" data-sport="NHL">NHL</button><button class="league-tab" data-sport="WNBA">WNBA</button><button class="league-tab" data-sport="MLS">MLS</button><button class="league-tab" data-sport="Premier League">Premier League</button><button class="league-tab" data-sport="Champions League">UCL</button><button class="league-tab" data-sport="NCAAF">NCAAF</button></div>
+<div class="score-grid" id="scoreGrid"><div class="loading-card">Loading live scores<span class="loader"></span></div></div>
+<section class="lower-grid"><div class="news-panel"><div class="panel-head"><div><div class="eyebrow">THE LATEST</div><h2>Top sports stories</h2></div><button class="text-btn" data-view="news">All news ↗</button></div><div class="news-list" id="newsList"></div></div>
+<div class="right-panel"><div class="panel-head"><div><div class="eyebrow">EXPLORE</div><h2>Leagues hub</h2></div></div><div class="league-hub"><button data-league="nba">🏀 <b>NBA</b><small>Basketball</small></button><button data-league="nfl">🏈 <b>NFL</b><small>Football</small></button><button data-league="mlb">⚾ <b>MLB</b><small>Baseball</small></button><button data-league="nhl">🏒 <b>NHL</b><small>Hockey</small></button></div></div></section>
+</div><footer><span>SPORTS CENTRAL <b>•</b> BUILT FOR THE FANS</span><span id="lastUpdated">Waiting for data…</span></footer></main></div>
+<div class="toast" id="toast"></div><script src="/static/app.js?v=solo-wikirace-2"></script></body></html>

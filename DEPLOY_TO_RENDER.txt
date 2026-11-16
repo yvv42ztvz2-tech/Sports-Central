@@ -1,0 +1,29 @@
+SPORTS CENTRAL — DEPLOY TO RENDER
+
+This is a Flask web app, so deploy it as a Render Web Service (not a Static Site).
+
+1. Create/sign in to GitHub.
+2. Create a new repository named sports-central.
+3. Upload the CONTENTS of this SPORTS_CENTRAL folder to the repository root:
+   app.py
+   requirements.txt
+   render.yaml
+   templates/
+   static/
+   (README and other project files are okay too)
+4. Sign in to https://render.com and connect your GitHub account.
+5. Choose New + > Web Service.
+6. Select the sports-central GitHub repository.
+7. Render should detect render.yaml. If asked to enter settings manually:
+   Runtime: Python
+   Build command: pip install -r requirements.txt
+   Start command: gunicorn app:app
+8. Choose a plan and click Deploy.
+9. When the deploy finishes, open the onrender.com URL Render gives you.
+
+The app has been prepared for Render by adding Gunicorn and a render.yaml deployment blueprint.
+It uses ESPN's public feeds and Google News RSS, so live data depends on those services.
+The free Render service may sleep after inactivity and take a little while to wake up.
+A custom domain can be connected later in Render's settings.
+
+Do not upload a ZIP file as the GitHub repository contents. Extract it first, then upload the files and folders inside SPORTS_CENTRAL.
